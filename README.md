@@ -1,4 +1,4 @@
-# Rux-perl
+# rux-perl
   Rux-perl is a project that supports Perl on Ruxos
 ## Easy run:
 ### Step1：
@@ -7,7 +7,7 @@ You need to successfully run [Ruxos](https://github.com/syswonder/ruxos) on your
   Go to Ruxos root dir and run:
   
 ```bash
-git clone https://github.com/syswonder/Rux-perl.git ./apps/c/rux-perl
+git clone https://github.com/syswonder/rux-perl.git ./apps/c/rux-perl
 make A=apps/c/rux-perl ARCH=aarch64 V9P=y NET=y MUSL=y LOG=info SMP=1 run
 ```
 
