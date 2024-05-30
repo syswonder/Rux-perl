@@ -11,6 +11,12 @@ git clone https://github.com/syswonder/rux-perl.git ./apps/c/rux-perl
 make A=apps/c/rux-perl ARCH=aarch64 V9P=y NET=y MUSL=y LOG=info SMP=1 run
 ```
 
+also you can run by `Rux-go`
+```bash
+ruxgo -b
+ruxgo -r
+```
+
 ## Perl test
   Because Ruxos is not support `fork()` now, so I used another way to run the test program.
   if you want to run the test program, you need to cancel code comments in ` main.c` :
