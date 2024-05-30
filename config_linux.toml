@@ -1,20 +1,21 @@
 [build]
 compiler = "gcc"
-loader_app = ["y", "/bin/hello"]
+# fill in your app path
+app = "./rootfs/perl"
 
 [os]
 name = "ruxos"
-services = ["alloc", "paging", "musl", "multitask", "fs", "virtio-9p"]
+services = ["paging","alloc","irq","multitask","fs","pipe","poll","rtc","signal","virtio-9p"]
 ulib = "ruxmusl"
-develop = "y"
 
 [os.platform]
 name = "aarch64-qemu-virt"
-mode = "release"
+smp = "1"
 log = "info"
 
 [os.platform.qemu]
-memory = "2g"
+memory = "256M"
 v9p = "y"
 v9p_path = "./rootfs"
-args = "/bin/hello"
+# your app parameter config
+args = "perl,your_perl.t"

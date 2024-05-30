@@ -39,4 +39,6 @@ make A=apps/c/rux-perl ARCH=aarch64 V9P=y NET=y MUSL=y LOG=info SMP=1 run
 ```bash
 sh apps/c/rux-perl/test_perl.sh
 ```
-The test results will be saved in /rux-perl/test_result.txt
+The test results will be saved in `/rux-perl/test_result.txt`
+
+You can see more information in [Ruxos-Book](https://ruxos.syswonder.org/chap02/apps/perl.html)
